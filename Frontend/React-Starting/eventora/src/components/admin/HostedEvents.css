@@ -1,0 +1,70 @@
+/* src/components/HostedEvents.css */
+
+.hosted-events-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px;
+    background: #f8f9fa;
+    border-radius: 12px;
+  }
+  
+  .hosted-events-container h1 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #343a40;
+  }
+  
+  .event-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .event-card {
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 300px;
+    overflow: hidden;
+  }
+  
+  .event-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .event-details {
+    padding: 15px;
+  }
+  
+  .event-name {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #343a40;
+  }
+  
+  .event-date {
+    font-size: 14px;
+    color: #6c757d;
+    margin-bottom: 10px;
+  }
+  
+  .event-description {
+    font-size: 16px;
+    color: #495057;
+  }
+  
+  @media (max-width: 768px) {
+    .event-cards-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .event-card {
+      max-width: 100%;
+    }
+  }
+  

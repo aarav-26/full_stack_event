@@ -1,0 +1,35 @@
+/* src/components/UserNavbar.css */
+
+.user-navbar {
+    background: #343a40;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    margin-top: 0px;
+    padding: 20px;
+    z-index: 1;
+  }
+  
+  .user-navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .user-navbar ul li {
+    margin: 0 15px;
+  }
+  
+  .user-navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+  }
+  
+  .user-navbar ul li a:hover {
+    color: #007bff;
+  }
+  
+  

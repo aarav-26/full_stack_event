@@ -1,0 +1,105 @@
+/* src/components/Statistics.css */
+
+.statistics-container {
+  width: 90%; /* Make container width responsive */
+  max-width: 1200px; /* Limit maximum width */
+  margin: 0 auto;
+  padding: 20px; /* Reduced padding for better responsiveness */
+  background: #f8f9fa;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  height: auto; /* Allow height to adjust based on content */
+}
+
+.statistics-container h1 {
+  text-align: center;
+  margin-bottom: 30px; /* Adjusted margin for better spacing */
+  color: #343a40;
+  font-size: 24px; /* Adjust font size for readability */
+}
+
+.statistics-cards {
+  display: flex;
+  flex-wrap: wrap; /* Allow cards to wrap on smaller screens */
+  gap: 20px;
+  justify-content: space-between; /* Distribute space evenly */
+  margin-bottom: 30px; /* Adjusted margin */
+}
+
+.statistics-card {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  flex: 1 1 calc(33.333% - 20px); /* Three cards per row, adjust spacing */
+  padding: 20px;
+  text-align: center;
+  min-width: 250px; /* Ensure a minimum width */
+  box-sizing: border-box; /* Include padding in width calculation */
+}
+
+.statistics-card h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #343a40;
+}
+
+.statistics-card p {
+  font-size: 24px;
+  font-weight: bold;
+  color: #28a745;
+}
+
+.statistics-chart {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-top: 20px; /* Add space between chart and other elements */
+}
+
+.statistics-chart h2 {
+  margin-bottom: 20px;
+  color: #343a40;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .statistics-cards {
+      flex-direction: row;
+      flex-wrap: wrap;
+  }
+
+  .statistics-card {
+      flex: 1 1 calc(50% - 20px); /* Two cards per row on medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .statistics-cards {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .statistics-card {
+      flex: 1 1 100%; /* Full width on small screens */
+      max-width: 90%; /* Limit width to ensure padding is respected */
+  }
+}
+
+@media (max-width: 480px) {
+  .statistics-container {
+      padding: 10px; /* Further reduced padding for very small screens */
+  }
+
+  .statistics-container h1 {
+      font-size: 20px; /* Reduce font size */
+  }
+
+  .statistics-card h2 {
+      font-size: 16px; /* Reduce font size */
+  }
+
+  .statistics-card p {
+      font-size: 20px; /* Reduce font size */
+  }
+}

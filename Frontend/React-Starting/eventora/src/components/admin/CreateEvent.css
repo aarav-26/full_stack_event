@@ -1,0 +1,270 @@
+/* src/components/CreateEvent.css */
+
+.create-event-main-container {
+    max-width: 1200px; /* Set a maximum width for large screens */
+    margin: 0 auto;
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+  }
+  
+  .event-info-container {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1 1 100%; /* Take full width on small screens */
+    max-width: 100%; /* Ensure it doesn’t overflow */
+  }
+  
+  .event-info-container h2 {
+    margin-bottom: 20px;
+    color: #343a40;
+  }
+  
+  .event-info-container p {
+    font-size: 16px;
+    color: #495057;
+  }
+  
+  .event-info-container ul {
+    list-style: disc;
+    padding-left: 20px;
+  }
+  
+  .create-event-container {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 20px;
+    flex: 2 1 100%; /* Take more space on larger screens */
+    max-width: 100%; /* Ensure it doesn’t overflow */
+  }
+  
+  .create-event-container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #343a40;
+  }
+  
+  .create-event-form .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .create-event-form .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #343a40;
+  }
+  
+  .create-event-form .form-group input,
+  .create-event-form .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #495057;
+  }
+  
+  .create-event-form .form-group textarea {
+    resize: vertical;
+  }
+  
+  .create-event-form .form-group input[type="file"] {
+    padding: 0;
+  }
+  
+  .create-event-form .form-group .event-preview-image {
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+    border-radius: 8px;
+  }
+  .create-event-form .form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #495057;
+  }
+  .create-event-form .form-group {
+    position: relative; /* For positioning custom file input */
+    margin-bottom: 20px;
+  }
+  
+  .create-event-form .form-group input[type="file"] {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0; /* Hide the default file input */
+    cursor: pointer;
+  }
+  
+  .custom-file-upload {
+    display: inline-block;
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ced4da;
+    border-radius: 8px;
+    background-color: #ffffff;
+    color: #495057;
+    font-size: 16px;
+    text-align: center;
+    line-height: 1.5;
+    cursor: pointer;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+    position: relative; /* For positioning text */
+  }
+  
+  .custom-file-upload:hover {
+    border-color: #28a745;
+    background-color: #f8f9fa;
+  }
+  
+  .custom-file-upload:after {
+    content: 'Choose File';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 16px;
+    color: #495057;
+  }
+  
+  .create-event-form .form-group .event-preview-image {
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  .submit-button {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background-color: #28a745;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submit-button:hover {
+    background-color: #218838;
+  }
+ /* Container with flex layout */
+.create-event-main-container {
+    width: 90%; /* Ensure container uses full width */
+    max-width: 1800px; /* Maximum width for larger screens */
+    margin: 0 auto; /* Center the container */
+    padding: 40px;
+    background: #f8f9fa;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: row; /* Default to row layout */
+    gap: 40px; /* Space between flex items */
+}
+
+/* Information container */
+.event-info-container {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1; /* Allow it to grow and shrink as needed */
+    max-width: 30%; /* Ensure it doesn't exceed 30% of the container width */
+}
+
+/* Event creation form container */
+.create-event-container {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 30px;
+    flex: 2; /* Allow it to grow more than the info container */
+    max-width: 70%; /* Ensure it doesn't exceed 70% of the container width */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .create-event-main-container {
+    flex-direction: column; /* Stack elements vertically on small screens */
+    gap: 20px;
+  }
+  
+  .event-info-container,
+  .create-event-container {
+    max-width: 100%; /* Full width on small screens */
+  }
+  .event-info-container{
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .create-event-main-container {
+    padding: 10px; /* Less padding on smaller screens */
+  }
+
+  .event-info-container {
+    display: none; /* Less padding inside the info container */
+  }
+
+  .create-event-container {
+    padding: 15px; /* Less padding inside the form container */
+  }
+
+  .create-event-form .form-group input,
+  .create-event-form .form-group textarea {
+    font-size: 14px; /* Smaller font size for inputs and textareas */
+  }
+
+  .submit-button {
+    padding: 12px; /* Slightly smaller button padding */
+    font-size: 16px; /* Smaller button text */
+  }
+}
+
+@media (max-width: 400px) {
+  .create-event-main-container {
+    padding: 5px; /* Minimal padding */
+  }
+
+  .event-info-container {
+    display: none; /* Minimal padding inside the info container */
+  }
+
+  .create-event-container {
+    padding: 10px; /* Minimal padding inside the form container */
+  }
+
+  .create-event-form .form-group input,
+  .create-event-form .form-group textarea {
+    font-size: 12px; /* Smaller font size for very small screens */
+  }
+
+  .submit-button {
+    padding: 10px; /* Minimal button padding */
+    font-size: 14px; /* Smaller button text */
+  }
+}
+@media (max-width: 960px) {
+    .event-info-container {
+        display: none; /* Hide the event-info-container on screens <= 960px */
+    }
+}
+
+@media (min-width: 961px) {
+    .event-info-container {
+        display: block; /* Ensure it's visible on screens > 960px */
+    }
+}

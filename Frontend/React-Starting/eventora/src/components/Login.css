@@ -1,0 +1,75 @@
+/* src/components/Login.css */
+
+.login-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Align items to the left */
+    height: 100vh;
+    background: linear-gradient(to right, #4a90e2, #d9e2f1);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-left: 20px; /* Add margin from the left */
+  }
+  
+  .login-form {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
+  }
+  
+  h2 {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 28px;
+    text-align: center;
+  }
+  
+  input {
+    margin: 10px 0;
+    padding: 12px;
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 16px;
+  }
+  
+  button {
+    margin-top: 15px;
+    padding: 12px;
+    width: 100%;
+    border: none;
+    border-radius: 6px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  button:hover {
+    background-color: #7ea1c4;
+    transform: translateY(-2px);
+  }
+  
+  .switch-btn {
+    margin-top: 15px;
+    background: none;
+    border: none;
+    color: #7e9cbd;
+    font-size: 16px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .switch-btn:hover {
+    color: #121c26;
+    background-color: #93bce7;
+  }
+  
+  p.navtosign{
+    text-align: center;
+    text-decoration: none;
+  }
